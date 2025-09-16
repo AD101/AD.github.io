@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My BI/Data/AI Portfolio — Sample</title>
+  <meta name="description" content="A simple, single‑file HTML5 starter you can drop into GitHub Pages. Shows headings, lists, tables, code, embeds, and more." />
+  <style>
+    /* --- Minimal, readable defaults (no external CSS) --- */
+    :root {
+      --bg: #ffffff;
+      --fg: #14171a;
+      --muted: #57606a;
+      --brand: #2563eb; /* link/button color */
+      --card: #f3f4f6;
+      --border: #e5e7eb;
+      --radius: 14px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f15;
+        --fg: #e6edf3;
+        --muted: #9aa4af;
+        --brand: #60a5fa;
+        --card: #111827;
+        --border: #1f2937;
+      }
+    }
+
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--fg);
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px; }
+
+    header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: saturate(1.2) blur(6px);
+      background: color-mix(in oklab, var(--bg) 92%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; gap: 16px; align-items: center; justify-content: space-between; }
+    .brand { font-weight: 700; letter-spacing: 0.2px; }
+    .nav a.btn { padding: 8px 14px; border-radius: var(--radius); background: var(--brand); color: white; display: inline-flex; align-items: center; gap: 8px; }
+    .nav a.btn:hover { filter: brightness(1.05); text-decoration: none; }
+
+    .hero { padding: 32px 0 8px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+
+    h1, h2, h3, h4, h5, h6 { line-height: 1.25; margin: 1.2em 0 0.6em; }
+    h1 { font-size: clamp(1.8rem, 2.6vw + 1rem, 2.6rem); }
+    h2 { font-size: clamp(1.4rem, 2vw + 0.6rem, 2rem); }
+    h3 { font-size: clamp(1.2rem, 1.4vw + 0.6rem, 1.5rem); }
+
+    .muted { color: var(--muted); }
+    .kpi { font-feature-settings: "tnum" 1, "kern" 1; font-variant-numeric: tabular-nums; }
+
+    pre, code, kbd, samp {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em; background: color-mix(in oklab, var(--card) 88%, transparent);
+    }
+    pre { padding: 12px; border-radius: var(--radius); border: 1px solid var(--border); overflow: auto; }
+    code { padding: 2px 6px; border-radius: 8px; border: 1px solid var(--border); }
+
+    blockquote { margin: 1em 0; padding: 0.6em 1em; border-left: 4px solid var(--brand); background: color-mix(in oklab, var(--card) 85%, transparent); border-radius: 0 var(--radius) var(--radius) 0; }
+
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; }
+    th { background: color-mix(in oklab, var(--card) 88%, transparent); }
+
+    .embed { aspect-ratio: 16 / 9; max-width: 100%; width: 100%; border: 0; border-radius: var(--radius); }
+
+    footer { margin: 48px 0 24px; font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Hello World — Sample</div>
+      <nav>
+        <a href="#headings">Headings</a>
+        &nbsp;·&nbsp;
+        <a href="#text">Text</a>
+        &nbsp;·&nbsp;
+        <a href="#lists">Lists</a>
+        &nbsp;·&nbsp;
+        <a href="#table">Table</a>
+        &nbsp;·&nbsp;
+        <a href="#code">Code</a>
+        &nbsp;·&nbsp;
+        <a href="#embeds">Embeds</a>
+        &nbsp;·&nbsp;
+        <a class="btn" href="#support">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>This was edited! 👋</h1>
+      <p class="muted">A single-file HTML5 page you can drop into <strong>GitHub Pages</strong>. It shows multiple <em>heading levels</em>, paragraphs, lists, a table, code blocks, and common embeds (YouTube + Power BI).</p>
+    </section>
+
+    <section id="headings" class="cards" aria-label="Headings">
+      <article class="card">
+        <h2>Heading levels</h2>
+        <h1>H1 — Project Title</h1>
+        <h2>H2 — Section Title</h2>
+        <h3>H3 — Subsection</h3>
+        <h4>H4 — Minor Heading</h4>
+        <h5>H5 — Tiny Heading</h5>
+        <h6>H6 — Micro Heading</h6>
+      </article>
+      <article class="card">
+        <h2>Quick KPIs</h2>
+        <p class="kpi"><strong>MRR:</strong> $12,340</p>
+        <p class="kpi"><strong>Churn:</strong> 2.4%</p>
+        <p class="kpi"><strong>Users:</strong> 8,192</p>
+      </article>
+      <article class="card">
+        <h2>Blockquote & Inline</h2>
+        <blockquote>
+          “All models are wrong, but some are useful.” — George Box
+        </blockquote>
+        <p>Inline <code>code()</code>, <kbd>Ctrl</kbd> + <kbd>Enter</kbd>, <mark>highlight</mark>, and an <a href="#">example link</a>.</p>
+      </article>
+    </section>
+
+    <section id="text">
+      <h2>Paragraph text</h2>
+      <p>
+        This is a sample paragraph for your portfolio. Describe your BI/Data/AI projects, link to
+        <a href="https://github.com/" target="_blank" rel="noopener">source code</a>, or embed visuals below.
+        The layout is responsive and dark‑mode friendly without any external CSS.
+      </p>
+    </section>
+
+    <section id="lists" class="cards">
+      <article class="card">
+        <h3>Unordered list</h3>
+        <ul>
+          <li>Clean, single‑file HTML</li>
+          <li>Responsive and accessible</li>
+          <li>Dark‑mode aware</li>
+          <li>No build tools required</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Ordered list</h3>
+        <ol>
+          <li>Fork/create a repo named <code>username.github.io</code></li>
+          <li>Add this file as <code>index.html</code> in the root</li>
+          <li>Commit & push — it’s live</li>
+        </ol>
+      </article>
+      <article class="card">
+        <h3>Definition list</h3>
+        <dl>
+          <dt>BI</dt>
+          <dd>Turning raw data into useful insights and dashboards.</dd>
+          <dt>ML</dt>
+          <dd>Using statistical/learning methods to predict behavior.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Current</th>
+            <th>Prior</th>
+            <th>Δ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Revenue</td>
+            <td>$120,400</td>
+            <td>$110,300</td>
+            <td>+9.2%</td>
+          </tr>
+          <tr>
+            <td>Visitors</td>
+            <td>81,240</td>
+            <td>77,980</td>
+            <td>+4.2%</td>
+          </tr>
+          <tr>
+            <td>Bounce</td>
+            <td>39.6%</td>
+            <td>41.2%</td>
+            <td>-1.6 pp</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="code">
+      <h2>Pre/code block</h2>
+      <pre><code>// Example: simple JS to toggle dark mode class
+const toggle = document.querySelector('#toggleTheme');
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('force-dark');
+  });
+}
+</code></pre>
+    </section>
+
+    <section id="embeds" class="cards">
+      <article class="card">
+        <h3>YouTube embed</h3>
+        <p class="muted">Replace <code>VIDEO_ID</code> with your video’s ID.</p>
+        <iframe class="embed" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" allowfullscreen></iframe>
+      </article>
+      <article class="card">
+        <h3>Power BI (Publish to web)</h3>
+        <p class="muted">Use only for public data. Secure/AAD‑gated embeds require a different setup.</p>
+        <iframe class="embed" title="Power BI Report" src="https://app.powerbi.com/view?r=YOUR_PUBLISH_TO_WEB_TOKEN" allowfullscreen="true"></iframe>
+      </article>
+    </section>
+
+    <section id="support">
+      <h2>Support / Links</h2>
+      <p>
+        If you want a Patreon button, paste the snippet below anywhere on the page (e.g., footer).
+      </p>
+      <pre><code>&lt;a href="https://www.patreon.com/bePatron?u=YOUR_USER_ID"
+   data-patreon-widget-type="become-patron-button"&gt;Become a Patron!&lt;/a&gt;
+&lt;script async src="https://c6.patreon.com/becomePatronButton.bundle.js"&gt;&lt;/script&gt;</code></pre>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Your Name. Built with plain HTML on GitHub Pages. <a href="#top">Back to top ↑</a></p>
+    </footer>
+  </main>
+
+  <script>
+    // tiny script to set year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
